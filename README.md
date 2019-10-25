@@ -1,10 +1,33 @@
-## Welcome to GitHub Pages
+## Práctica Apache
 
-You can use the [editor on GitHub](https://github.com/juanantoniogisbert/Apache.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Primeramente instalaremos Apache, esto es un servidor web `http` existe para todas las plataformas actualmente, se usa principalmente para enviar páginas web estáticas y dinámicas en www.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Para instalar Apache realizaremos los siguientes comandos.
 
-### Markdown
+```markdown
+$ sudo apt-get update
+$ sudo apt-get install apache2
+```
+
+### SITIO 1
+
+Ahora vamos a realizar la siguiente configuración para nuestro sitio.
+
+- Estar publicada en el puerto 82.
+  Una vez instalado el Apache deberemos de hacer los siguientes comandos:
+  ```markdown
+  Acceder a la siguiente carperta.
+  # $ cd /etc/apache2/sites-availables
+
+  En esta carpeta crearemos el fichero sitio1.conf
+  # $ sudo touch sitio1.conf
+  ```
+  ![Alt text](images/cap1.png?raw=true "Title")
+
+  Ahora editamos el fichero:
+
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
