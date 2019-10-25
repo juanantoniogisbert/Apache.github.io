@@ -17,14 +17,27 @@ Ahora vamos a realizar la siguiente configuración para nuestro sitio.
   Una vez instalado el Apache deberemos de hacer los siguientes comandos:
   ```markdown
   Acceder a la siguiente carperta.
-  # $ cd /etc/apache2/sites-availables
+  $ cd /etc/apache2/sites-available
 
   En esta carpeta crearemos el fichero sitio1.conf
-  # $ sudo touch sitio1.conf
+  $ sudo touch sitio1.conf
   ```
   ![Alt text](images/cap1.png?raw=true "Title")
 
   Ahora editamos el fichero:
+  ![Alt text](images/cap2.png?raw=true "Title")
+
+- Directorio en /var/www/sitioPhp
+
+  Primeramente no dirigimos al directorio /var/www
+  ![Alt text](images/cap3.png?raw=true "Title")
+
+  Crearemos la carperta y luego crearemos el index dentro de la misma.
+  ```markdown
+  $ sudo mkdir sitioPhp
+  $ cd sitioPhp
+  $ sudo touch index.php
+  ```
 
 
 
