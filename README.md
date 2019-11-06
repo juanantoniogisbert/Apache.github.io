@@ -38,6 +38,27 @@ Ahora vamos a realizar la siguiente configuración para nuestro sitio.
   $ cd sitioPhp
   $ sudo touch index.php
   ```
+  ![Alt text](images/cap4.png?raw=true "Title")
+
+  Detro del index.php pondremos lo siguiente.
+  ![Alt text](images/cap5.png?raw=true "Title")
+
+  Ahora crearemos el directorio de nuestros logs en:
+  ![Alt text](images/cap6.png?raw=true "Title")
+
+  Creamos el fichero "log_personalizado.log" y añadimos la siguiente linea
+  ```markdown
+  LogFormat "%t %h %m %>s" PhpLogFormat
+  ```
+  Para poder acceder a nuestro sitio web tenemos que hacer tenemos que hacer que escuche nuestro puerto en el siguiente fichero de configuracion.
+  ![Alt text](images/cap7.png?raw=true "Title")
+
+  Despues tenemos que habilitar nuestro fichero .conf con el siguiente comando.
+  markdown
+  $ sudo a2ensite sitio1
+  ```
+
+
 
 
 
