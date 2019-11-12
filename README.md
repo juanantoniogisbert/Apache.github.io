@@ -54,9 +54,14 @@ Ahora vamos a realizar la siguiente configuración para nuestro sitio.
   ![Alt text](images/cap7.png?raw=true "Title")
 
   Despues tenemos que habilitar nuestro fichero .conf con el siguiente comando.
-  markdown
+  ```markdown
   $ sudo a2ensite sitio1
   ```
+  
+  Ahora comprobamos que todo funciona y hacemos la prueba de error.
+  ![Alt text](images/cap8.png?raw=true "Title")
+  ![Alt text](images/cap9.png?raw=true "Title")
+
 
 
 
