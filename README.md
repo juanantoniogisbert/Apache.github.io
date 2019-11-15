@@ -84,5 +84,33 @@ $ sudo mkdir sitioNode
 ```
 ![Alt text](images/cap11.png?raw=true "Title")
 
+Configuraremos el fichero "sitio2.conf" de la misma manera que lo hemos hecho en el sitio1 este fichero se encuentra en (/etc/apache2/sites-available)
+
+![Alt text](images/cap12.png?raw=true "Title")
+
+Para crear crear el directorio restringido tenomos que hacer el siguiente comando.
+
+```markdown
+$ sudo htpasswd -c /etc/apache2/.htpasswd usuario
+```
+
+El siguiente paso es crear el directorio "public_files" y el fichero ".htaccess" en la carpeta (/var/www/sitioNode)
+
+![Alt text](images/cap13.png?raw=true "Title")
 
 
+### Investigación
+La herramienta (GoAcces) no monitoriza to los logs de apache para ello lo instalaremos:
+
+```markdown
+$ sudo apt-get install goaccess
+```
+
+para ver esta monitorizacion hacemos el siguiente comando
+
+```markdown
+$ goaccess /var/log/apache2/access.log -o /var/www/html/monito.html --log-format=COMBINED --real-time-html
+```
+En el navegador escribiremos lo siguiente: http://localhost/monito.html
+
+![Alt text](images/cap14.png?raw=true "Title")
